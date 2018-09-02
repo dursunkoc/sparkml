@@ -67,7 +67,6 @@ object WineClassification {
 
     val labelsAndPredictions = testData.map(_.label).zip(predictions)
 
-    labelsAndPredictions.foreach(println)
     val mcm = new MulticlassMetrics(labelsAndPredictions)
     println("Accuracy", mcm.accuracy)
     println("Precision for 1.0", mcm.precision(1.0))

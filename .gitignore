@@ -3,3 +3,8 @@
 .project
 .settings/
 target/
+.idea/
+*.log
+metastore_db/
+sparkml.iml
+src/main/resources/predictions/
